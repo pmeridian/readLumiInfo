@@ -56,8 +56,8 @@ void readLumiCsv(char* csvfile, int format)
 
   std::cout << "Found " << nlines << " LS" << std::endl;
 
-  TFile *f = new TFile("lumiByLSRun2010.root","RECREATE");
-  TNtuple *ntuple = new TNtuple("lumiByLSRun2010","lumiByLSRun2010","run:LS:delLumi:recLumi:nBX:avgInstLumi:lsstarttimesec:lsstarttimeusec");
+  TFile *f = new TFile("lumiByLS.root","RECREATE");
+  TNtuple *ntuple = new TNtuple("lumiByLS","lumiByLS","run:LS:delLumi:recLumi:nBX:avgInstLumi:lsstarttimesec:lsstarttimeusec");
   if ( format == 1)
     {
       for (int irecord=0;irecord<table.size();++irecord)

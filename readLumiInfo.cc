@@ -11,7 +11,7 @@ readLumiInfo::readLumiInfo(const char* file)
       return;
     }
 
-  lumiTree=(TNtuple*) lumiFile->Get("lumiByLSRun2010");
+  lumiTree=(TNtuple*) lumiFile->Get("lumiByLS");
 
   float run;
   float LS;
