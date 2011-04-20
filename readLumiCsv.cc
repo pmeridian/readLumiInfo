@@ -11,7 +11,7 @@
 typedef std::deque <std::string> record_t;
 typedef std::deque <record_t> table_t;
 
-void readLumiCsv(char* csvfile)
+void readLumiCsv(char* csvfile, int format)
 {
   //*****************************************************************************************************
   //  PM 2010.12.01
@@ -21,8 +21,8 @@ void readLumiCsv(char* csvfile)
   //  -end "11/04/10 00:00:00.000000" -batch lumiByLS-time.png timels -o /tmp/meridian/lumiByLS.csv
   //*****************************************************************************************************
 
-  //  int format=1;//format by lumiCalc
-  int format=2;//format by lumiSumPlot
+  // int format=1;//format by lumiCalc
+  // int format=2;//format by lumiSumPlot
   
   ifstream in;
   in.open(csvfile);
